@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+    <script src="{% static 'mail/inbox.js' %}"></script>
+</head>
+<body>
+    <h1>Mail</h1>
+    <button onclick="load_mailbox('inbox')">Inbox / Вхідні</button>
+    <button onclick="load_mailbox('sent')">Sent / Надіслані</button>
+    <button onclick="load_mailbox('archive')">Archive / Архів</button>
+    <button onclick="compose_email()">Compose / Написати</button>
+    <hr>
+    <div id="view"></div>
+</body>
+</html>
